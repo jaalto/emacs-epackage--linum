@@ -1,0 +1,24 @@
+Package: linenum
+Section: extensions
+License: GPL-3+
+Depends: emacs (<= 22)
+Status: core-emacs-23 stable
+Compat:
+Maintainer: Jari Aalto <jari.aalto@cante.net>
+Bugs:
+Upstream: Markus Triska <markus.triska@gmx.at>
+Upstream-Bugs:
+Vcs-Type:
+Vcs-Url:
+Vcs-Args:
+Vcs-Browser:
+Vcs-User:
+Vcs-Password:
+Homepage:
+Wiki: http://www.emacswiki.org/emacs/LineNumbers
+Commentary: linemum.el
+Description: display line numbers in the left margin
+ Toggle display of line numbers with M-x linum-mode.  To enable
+ line numbering in all buffers, use M-x global-linum-mode.
+ .
+ Note: This version is the same as shipped with Emacs 23.2.1
