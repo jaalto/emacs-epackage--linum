@@ -1,7 +1,7 @@
 
 ;;;### (autoloads (global-linum-mode linum-mode linum-format) "linum"
-;;;;;;  "../linum.el" (19773 53384))
-;;; Generated autoloads from ../linum.el
+;;;;;;  "../linum.el" (20185 25698))
+;;; Generated autoloads from linum.el
 
 (defvar linum-format 'dynamic "\
 Format used to display line numbers.
@@ -10,7 +10,7 @@ as needed, or a function that is called with a line number as its
 argument and should evaluate to a string to be shown on that line.
 See also `linum-before-numbering-hook'.")
 
-(custom-autoload 'linum-format "linum" t)
+(custom-autoload 'linum-format "../linum" t)
 
 (autoload 'linum-mode "linum" "\
 Toggle display of line numbers in the left margin.
@@ -24,12 +24,14 @@ Setting this variable directly does not take effect;
 either customize it (see the info node `Easy Customization')
 or call the function `global-linum-mode'.")
 
-(custom-autoload 'global-linum-mode "linum" nil)
+(custom-autoload 'global-linum-mode "../linum" nil)
 
 (autoload 'global-linum-mode "linum" "\
-Toggle Linum mode in every possible buffer.
-With prefix ARG, turn Global-Linum mode on if and only if
-ARG is positive.
+Toggle Linum mode in all buffers.
+With prefix ARG, enable Global-Linum mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
 Linum mode is enabled in all buffers where
 `linum-on' would do it.
 See `linum-mode' for more information on Linum mode.
